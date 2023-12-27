@@ -42,6 +42,14 @@ class App {
         for (let i = 0; i < headerElements.length; i++) {
             headerElements[i].innerText = "huh????";
         }
+        let headersByCssClass = document.getElementsByClassName("test");
+        for (let i = 0; i < headerByCssClass.length; i++) {
+        headersByCssClass[0].innerText = "nieuws ";
+        headersByCssClass[1].innerText = "reviews";
+        headersByCssClass[2].innerText = "commentaar ";
+        headersByCssClass[3].innerText = "test1";
+        headersByCssClass[4].innerText = "test2 ";
+        }
     }
 }
 let app = new App();
