@@ -29,6 +29,19 @@ class App {
             const element = i +": " + list[i];
             console.log(element);
         }
+        for (let i = 0; i < list.length; i++) {
+            const element = i +": " + list[i];
+        }
+        let headerByCssClass = document.getElementsByClassName("bandName")
+        let bandNameList = [];
+        for (let i = 0; i < headerByCssClass.length; i++) {
+            headerByCssClass[i].innerText = "huh????";
+            console.log(bandNameList);
+        }
+        let headerElements = document.querySelectorAll("h1");
+        for (let i = 0; i < headerElements.length; i++) {
+            headerElements[i].innerText = "huh????";
+        }
     }
 }
 let app = new App();
