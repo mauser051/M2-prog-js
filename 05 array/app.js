@@ -50,6 +50,14 @@ class App {
         headersByCssClass[3].innerText = "test1";
         headersByCssClass[4].innerText = "test2 ";
         }
+
+        let data =["nieuws", "reviews", "commentaar", "test1","test2"]
+        for (let i = 0;i < headerByCssClass.length && i < data.length; i++) {
+            const element = i +": " + data[i];
+            headerByCssClass[i].innerText = element;
+            console.log(element);
+        }
+
     }
 }
 let app = new App();
