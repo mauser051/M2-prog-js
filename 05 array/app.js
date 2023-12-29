@@ -52,10 +52,9 @@ class App {
         }
 
         let data =["nieuws", "reviews", "commentaar", "test1","test2"]
-        for (let i = 0;i < headerByCssClass.length && i < data.length; i++) {
+        for (let i = 0; i < headersByCssClass.length; i++) {
             const element = i +": " + data[i];
-            headerByCssClass[i].innerText = element;
-            console.log(element);
+            headersByCssClass[i].innerText = element;
         }
 
     }
